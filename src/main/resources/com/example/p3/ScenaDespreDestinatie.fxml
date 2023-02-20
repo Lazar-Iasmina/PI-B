@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1173.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.p3.ControllerDest">
+   <children>
+      <Pane prefHeight="750.0" prefWidth="273.0" style="-fx-background-color: cf27ff;">
+         <children>
+            <Label layoutX="54.0" layoutY="338.0" text="Book-A-Trip">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Button layoutX="65.0" layoutY="405.0" mnemonicParsing="false" onAction="#switchtoScene1" prefHeight="50.0" prefWidth="129.0" style="-fx-background-color: EFA4FF;" text="Meniu Principal" />
+         </children>
+      </Pane>
+      <TabPane fx:id="tabPane" layoutX="274.0" layoutY="2.0" prefHeight="743.0" prefWidth="902.0" style="-fx-background-color: CF27F4;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab1" style="-fx-background-color: FCF0FF;" text="Despre">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="627.0" prefWidth="830.0" style="-fx-background-color: FCF0FF;">
+                     <children>
+                        <ImageView fx:id="imagdest" fitHeight="287.0" fitWidth="421.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="548.0" layoutY="201.0" mnemonicParsing="false" onAction="#switchtoRezervare" prefHeight="65.0" prefWidth="144.0" text="Rezerva" />
+                        <ListView fx:id="reviewuri" layoutX="71.0" layoutY="322.0" prefHeight="330.0" prefWidth="709.0" />
+                        <Label fx:id="nume" layoutX="482.0" layoutY="55.0" prefHeight="50.0" prefWidth="327.0" text="Label">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="despre" layoutX="482.0" layoutY="128.0" prefHeight="69.0" prefWidth="273.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab2" style="-fx-background-color: FCF0FF;" text="Reviewuri">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="823.0" style="-fx-background-color: FCF0FF;">
+                     <children>
+                        <BarChart fx:id="statistica" layoutX="108.0" layoutY="137.0">
+                          <xAxis>
+                            <CategoryAxis label="Numar Stele" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="NUmar Reviewuri" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="820.0" prefWidth="1231.0" style="-fx-background-color: FCF0FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.p3.ControllerAlegereZbor">
+   <children>
+      <Pane prefHeight="820.0" prefWidth="297.0" style="-fx-background-color: CF27F4;">
+         <children>
+            <Label layoutX="58.0" layoutY="391.0" text="Book a Trip">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="548.0" layoutY="286.0" text="Zbor rezervat cu succes!!">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button layoutX="647.0" layoutY="435.0" mnemonicParsing="false" onAction="#switchtoScene1" prefHeight="69.0" prefWidth="271.0" style="-fx-background-color: EFA4FF;" text="Meniu Principal">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

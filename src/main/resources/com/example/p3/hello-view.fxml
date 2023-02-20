@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="1104.0" style="-fx-background-color: CF27F4;" styleClass="parent" stylesheets="@stilLogin.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.p3.HelloController">
+   <children>
+      <Pane layoutX="11.0" layoutY="12.0" prefHeight="712.0" prefWidth="1079.0" style="-fx-background-color: FCF0FF;" />
+      <Pane layoutX="517.0" layoutY="106.0" prefHeight="484.0" prefWidth="512.0" style="-fx-background-color: EFA4FF;" />
+      <Pane layoutX="527.0" layoutY="117.0" prefHeight="462.0" prefWidth="483.0" style="-fx-background-color: FCF0FF;">
+         <children>
+            <Label alignment="CENTER" layoutY="34.0" prefHeight="53.0" prefWidth="483.0" text="Sign in">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <HBox layoutX="25.0" layoutY="169.0" prefHeight="56.0" prefWidth="434.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="username" prefHeight="52.0" prefWidth="434.0" promptText="Email" stylesheets="@stilLogin.css">
+                     <styleClass>
+                        <String fx:value="tf" />
+                        <String fx:value="tf_box" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="25.0" layoutY="241.0" prefHeight="56.0" prefWidth="434.0" style="-fx-background-color: white;">
+               <children>
+                  <PasswordField fx:id="parola" prefHeight="51.0" prefWidth="404.0" promptText="Password" stylesheets="@stilLogin.css">
+                     <styleClass>
+                        <String fx:value="tf" />
+                        <String fx:value="tf_box" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <Button layoutX="149.0" layoutY="314.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="155.0" text="Sign In">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="157.0" layoutY="395.0" mnemonicParsing="false" onAction="#switchtoForgotPass" prefHeight="25.0" prefWidth="140.0" styleClass="tf" stylesheets="@stilLogin.css" text="Ai uitat parola?" textFill="#808080" />
+         </children>
+      </Pane>
+      <Label layoutX="142.0" layoutY="206.0" prefHeight="56.0" prefWidth="231.0" text="Bine ati venit!">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="286.0" prefHeight="68.0" prefWidth="391.0" text="Zboruri la cele mai avantajoase preturi">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="165.0" layoutY="389.0" mnemonicParsing="false" onAction="#switchtoSignUp" prefHeight="44.0" prefWidth="98.0" text="Sign Up">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
